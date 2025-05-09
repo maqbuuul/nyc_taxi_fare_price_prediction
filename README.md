@@ -363,7 +363,8 @@ The modular implementation approach ensures code maintainability and scalability
 
 *Technologies: Python, Pandas, NumPy, Scikit-learn, XGBoost, Plotly, Seaborn, Matplotlib, Folium, DuckDB, SQL, Pickle*
 
-**Author:** Abdiwahid Ali  
+**Author:** Abdiwahid Ali
+
 *Contact: [LinkedIn Profile](https://www.linkedin.com/in/https://www.linkedin.com/in/maqbuuul/)*
 
-*Dataset: [download dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+*Dataset: [download dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)*
