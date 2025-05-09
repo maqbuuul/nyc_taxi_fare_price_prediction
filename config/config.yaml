@@ -1,0 +1,53 @@
+# Configuration parameters for NYC Taxi Fare Prediction project.
+
+# Database configuration
+DB_PATH: '/db/nyc_taxi.duckdb'
+SAMPLE_SIZE: 100000  # For exploration and development
+
+# Data preprocessing
+FARE_OUTLIER_QUANTILES: [0.01, 0.99]
+DISTANCE_OUTLIER_QUANTILES: [0.01, 0.99]
+
+# Clustering configuration
+CLUSTER_FEATURES: ['trip_distance', 'fare_amount', 'cost_per_mile']
+CLUSTER_RANGE: [2, 3, 4, 5, 6, 7, 8, 9, 10]  # Range of k values to test
+CLUSTER_RANDOM_STATE: 42
+
+# Classification configuration
+CLASSIFICATION_RANDOM_STATE: 42
+CLASSIFICATION_TEST_SIZE: 0.2
+
+# Categorical features
+CAT_FEATURES:
+  - payment_category
+  - distance_category
+  - passenger_group
+  - cluster
+  - time_of_day
+  - is_weekend
+
+# Numerical features
+NUM_FEATURES:
+  - trip_distance
+  - passenger_count
+  - cost_per_mile
+  - pickup_hour
+
+# Regression configuration
+REGRESSION_RANDOM_STATE: 42
+REGRESSION_TEST_SIZE: 0.2
+
+# Cross-validation
+CV_FOLDS: 5
+
+# Fare categories
+FARE_CATEGORIES: ['low', 'medium', 'high']
+
+# Hyperparameter tuning
+PARAM_GRID:
+  regressor__n_estimators: [50, 100, 200]
+  regressor__max_depth: [null, 10, 20, 30]
+  regressor__min_samples_split: [2, 5, 10]
+
+# Model saving
+MODEL_DIR: '../models'
