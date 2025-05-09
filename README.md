@@ -4,7 +4,7 @@
 
 New York City's taxi system processes millions of trips monthly, but both drivers and passengers face challenges with fare predictability. Drivers struggle to optimize routes and estimate earnings, while passengers encounter uncertainty about costs before booking. This project addresses these challenges by developing a robust, multi-stage machine learning pipeline to accurately predict taxi fares based on trip characteristics, empowering both drivers and passengers with reliable fare estimates while providing transportation planners with actionable insights into urban mobility patterns.
 
-![NYC Taxi](https://images.unsplash.com/photo-1568438350562-2cae6d394ad0?auto=format&fit=crop&q=80&w=1000)
+![NYC Taxi](config/1OxIdFjt7v3wCErqGfSwD6w.jpg)
 
 ## Project Overview
 
