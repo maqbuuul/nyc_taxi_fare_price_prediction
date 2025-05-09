@@ -10,9 +10,6 @@ New York City's taxi system processes millions of trips monthly, but both driver
 
 This comprehensive data science project analyzes New York City taxi trip data to develop an accurate fare prediction system. Through extensive exploratory data analysis and advanced modeling techniques, I uncovered key patterns, relationships, and insights that inform a sophisticated multi-stage prediction approach while revealing the underlying dynamics of NYC's transportation ecosystem.
 
-**Author:** Abdiwahid Ali  
-**Last Updated:** May 10, 2025
-
 ## Features & Capabilities
 
 - **Multi-stage prediction pipeline**:
@@ -366,4 +363,7 @@ The modular implementation approach ensures code maintainability and scalability
 
 *Technologies: Python, Pandas, NumPy, Scikit-learn, XGBoost, Plotly, Seaborn, Matplotlib, Folium, DuckDB, SQL, Pickle*
 
+**Author:** Abdiwahid Ali  
 *Contact: [LinkedIn Profile](https://www.linkedin.com/in/https://www.linkedin.com/in/maqbuuul/)*
+
+*Dataset: [download dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
