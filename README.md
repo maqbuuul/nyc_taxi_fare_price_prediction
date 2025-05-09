@@ -161,14 +161,14 @@ Handles feature engineering, creating new features from raw data, and preparing 
 - Creates derived features like cost per mile, distance categories, etc.
 - Implements preprocessing pipelines for numerical and categorical features
 - Handles categorical encoding and numerical scaling
-- Creates feature transformers that can be serialized for prediction pipeline
+- Creates feature transformers that can be serialized for a prediction pipeline
 - Includes data validation and outlier handling
 
 ### 3. Trip Clustering (`clustering.py`)
 
 Implements K-means clustering to identify distinct patterns in taxi trips:
 
-- Optimizes cluster count using silhouette score and Davies-Bouldin index
+- Optimizes cluster count using the silhouette score and the Davies-Bouldin index
 - Extracts cluster profiles and characteristics
 - Visualizes cluster distributions and relationships
 - Creates and serializes the clustering model for prediction
@@ -198,9 +198,9 @@ Trains dedicated regression models for each fare category:
 
 ### Trip Distance & Fare Relationship
 
-Trip distance emerged as the strongest predictor of fare amount, with a clear positive correlation. However, the relationship is not perfectly linear, particularly for very short or very long trips.
+Trip distance emerged as the strongest predictor of fare amount, with a clear positive correlation. However, the relationship is not linear, particularly for short or long trips.
 
-The analysis revealed that cost per mile decreases significantly as trip distance increases, suggesting a non-linear fare structure that includes both fixed and variable components:
+The analysis revealed that the cost per mile decreases significantly as trip distance increases, suggesting a non-linear fare structure that includes both fixed and variable components:
 
 - Very short trips (<1 mile) average $9.34 per mile
 - Medium trips (2-3 miles) average $5.87 per mile
@@ -231,7 +231,7 @@ This finding challenges common assumptions about group size impacting fare prici
 
 ### Geographic Distribution & Route Analysis
 
-The geographic analysis revealed significant spatial patterns in pickup and dropoff locations:
+The geographic analysis revealed significant spatial patterns in pickup and drop-off locations:
 
 - High concentration of pickups in Midtown and Lower Manhattan
 - Notable dropoff clusters at major transportation hubs (airports, train stations)
@@ -329,7 +329,7 @@ Based on the comprehensive analysis and modeling results, I recommend the follow
 
 ### For Model Enhancement
 
-1. **Integrate external data sources** such as weather conditions, events calendars, and traffic patterns
+1. **Integrate external data sources** such as weather conditions, event calendars, and traffic patterns
 2. **Implement real-time model updates** to adapt to changing conditions
 3. **Develop a monitoring system** to detect drift in model performance
 4. **Create a robust API service** for integration with mobile applications
@@ -339,7 +339,7 @@ Based on the comprehensive analysis and modeling results, I recommend the follow
 
 The insights and models from this project offer significant value:
 
-- **For passengers**: More accurate fare estimation before booking, with 96.2% of predictions within $5 of actual fare
+- **For passengers**: More accurate fare estimation before booking, with 96.2% of predictions within $5 of the actual fare
 - **For drivers**: Optimized route selection and better earning potential through predictable fare estimation
 - **For service providers**: Enhanced customer satisfaction through fare transparency and reduced disputes
 - **For transportation planners**: Data-driven insights into urban mobility patterns and fare equity
@@ -366,4 +366,4 @@ The modular implementation approach ensures code maintainability and scalability
 
 *Technologies: Python, Pandas, NumPy, Scikit-learn, XGBoost, Plotly, Seaborn, Matplotlib, Folium, DuckDB, SQL, Pickle*
 
-*Contact: [LinkedIn Profile](https://www.linkedin.com/in/https://www.linkedin.com/in/maqbuuul/) | [GitHub Repository](https://github.com/maqbuuul/nyc-taxi-prediction)*
+*Contact: [LinkedIn Profile](https://www.linkedin.com/in/https://www.linkedin.com/in/maqbuuul/)*
